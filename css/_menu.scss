@@ -1,0 +1,32 @@
+$window: 1000px;
+
+.menu {
+  padding: 0;
+  list-style: none;
+  background-color: lightgray;
+  .element {
+    width: 100%;
+    text-align: center;
+    &:hover {
+      background-color: gray;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: $window) {
+  .menu {
+    display: flex;
+  }
+  .element {
+    justify-content: space-between;
+  }
+  img {
+    display: none;
+  }
+}
